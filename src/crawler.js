@@ -30,7 +30,7 @@ setTimeout(() => {
   var msgStruct = "[".green + "*".white + "]".green
   var findStruct = "[".green + "~".white + "]".green
   console.log(alertStruct + " Enter Username Or Page Link.");
-  username = prompt("root@home:~/".blue + " $".white)
+  username = prompt("root@home:~/".blue.bold + " $".white.bold)
   console.log(msgStruct + " Finding Userpage...")
 
   if (username.startsWith("http://")) console.log(alertStruct + " Use HTTPS For Safe Connection.")
