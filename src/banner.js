@@ -5,6 +5,7 @@ const path = require("path")
 const { newErrorLog } = require("./log.js")
 
 async function smallBanner() {
+  console.clear()
   var smallBannerPath = path.join(__dirname, "banners", "small.txt")
 
   fs.readFile(smallBannerPath, async (err, banner) => {
